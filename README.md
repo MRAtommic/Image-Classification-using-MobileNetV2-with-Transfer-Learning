@@ -14,7 +14,13 @@
 <b>Coconut</b> เป็นระบบจำแนกรูปภาพประสิทธิภาพสูงที่สร้างขึ้นบนสถาปัตยกรรม <b>MobileNetV2</b> โดยใช้เทคนิค <b>Transfer Learning</b> จากชุดข้อมูล ImageNet เพื่อให้ได้โมเดลที่มีขนาดเล็ก ประมวลผลได้รวดเร็ว และรักษาความแม่นยำในระดับสูง เหมาะสำหรับการใช้งานในสภาพแวดล้อมที่มีทรัพยากรจำกัด
 </p>
 
-### 2. ข้อมูลทางเทคนิค (Technical Specifications)
+### 2. แหล่งที่มาข้อมูล (Data Source)
+<ul>
+  <li><b>Dataset:</b> ข้อมูลที่ใช้ในการฝึกฝนและทดสอบโมเดล </li>
+  [cite_start]<li><b>Source Link:</b> <a href="https://drive.google.com/file/d/17u1YIwRT3NlWcUsT7ArF9IwZ9ke3odw1/view">dataset_coconut_origin.rar</a></li>
+</ul>
+
+### 3. ข้อมูลทางเทคนิค (Technical Specifications)
 <ul>
   <li><b>Core Architecture:</b> MobileNetV2 (Pre-trained Weights)</li>
   <li><b>Optimization Strategy:</b> Transfer Learning (Feature Extraction)</li>
@@ -22,7 +28,7 @@
   <li><b>Inference System:</b> Graphical Confidence Score Output</li>
 </ul>
 
-### 3. โครงสร้างของโมเดล (Model Architecture)
+### 4. โครงสร้างของโมเดล (Model Architecture)
 <table width="100%">
   <thead>
     <tr>
@@ -46,7 +52,7 @@
   </tbody>
 </table>
 
-### 4. ผลการทดลองและการแสดงผล (Experimental Results)
+### 5. ผลการทดลองและการแสดงผล (Experimental Results)
 <table align="center" width="100%" style="border-collapse: collapse; table-layout: fixed;">
   <tr>
     <td align="center" style="padding: 10px; border: 1px solid #ddd; vertical-align: top;">
@@ -70,7 +76,7 @@
   </tr>
 </table>
 
-### 5. วิธีการดำเนินงาน (Workflow)
+### 6. วิธีการดำเนินงาน (Workflow)
 <ol>
   <li><b>Preprocessing:</b> ปรับขนาดภาพ 224x224 และ Rescale [0, 1]</li>
   <li><b>Training:</b> ฝึกฝนผ่าน ImageDataGenerator แบบขนาน</li>
